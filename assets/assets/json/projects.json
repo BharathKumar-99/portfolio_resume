@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Story Space",
+    "description": "A Flutter-based social media app for authors to upload and share stories. Built with Supabase and Firebase for backend.",
+    "technologies": [
+      "Flutter",
+      "Firebase",
+      "Supabase"
+    ],
+    "link": "https://github.com/BharathKumar-99"
+  },
+  {
+    "title": "Smart Plant Monitoring System",
+    "description": "An IoT-based system using NodeMCU and sensors, with a Flutter frontend and Supabase backend. Monitors plant health in real-time.",
+    "technologies": [
+      "Flutter",
+      "Supabase",
+      "NodeMCU"
+    ],
+    "link": "https://github.com/BharathKumar-99"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Flutter Developer",
+    "company": "Bidryde Pvt Ltd (Remote)",
+    "period": "Jan 2024 - Present",
+    "description": "Built and maintained customer, host, and fleet apps using Flutter. Implemented complex navigation flows, optimized state management with Provider and GoRouter, and integrated real-time APIs."
+  },
+  {
+    "title": "Flutter Developer",
+    "company": "Pepil Network Pvt Limited",
+    "period": "Aug 2023 - Dec 2023",
+    "description": "Developed reusable Flutter widgets, implemented dynamic search, and optimized performance across multiple modules."
+  },
+  {
+    "title": "Android Developer",
+    "company": "Micronxt Solutions Pvt Limited",
+    "period": "Jul 2022 - Feb 2023",
+    "description": "Built Android apps using Kotlin and Java, integrated third-party SDKs, and maintained rigorous code quality."
+  },
+  {
+    "title": "Android Developer",
+    "company": "Freelance",
+    "period": "Jul 2021 - Jul 2022",
+    "description": "Created native Android apps for clients using Java. Focused on clean architecture and client-oriented UX."
+  }
+]

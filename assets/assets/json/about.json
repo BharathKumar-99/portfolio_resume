@@ -1,0 +1,45 @@
+{
+  "summary": "Experienced Flutter Developer with over 3 years of professional experience in designing, building, and deploying cross-platform mobile applications. Proficient in Flutter, Dart, Firebase, Supabase, Provider, and GetX. Passionate about writing clean, efficient, and scalable code while delivering seamless user experiences. Strong background in native Android development using Java and Kotlin.",
+  "skills": [
+    {
+      "image": "assets/icons/flutter.png",
+      "name": "Flutter"
+    },
+    {
+      "image": "assets/icons/dart.png",
+      "name": "Dart"
+    },
+    {
+      "image": "assets/icons/kotlin.png",
+      "name": "Kotlin"
+    },
+    {
+      "image": "assets/icons/java.png",
+      "name": "Java"
+    },
+    {
+      "image": "assets/icons/firebase.png",
+      "name": "Firebase"
+    },
+    {
+      "image": "assets/icons/supabase.png",
+      "name": "Supabase"
+    },
+    {
+      "image": "assets/icons/flutter.png",
+      "name": "Provider"
+    },
+    {
+      "image": "assets/icons/flutter.png",
+      "name": "GetX"
+    },
+    {
+      "image": "assets/icons/restapi.jpg",
+      "name": "REST APIs"
+    },
+    {
+      "image": "assets/icons/git.png",
+      "name": "Git"
+    }
+  ]
+}
