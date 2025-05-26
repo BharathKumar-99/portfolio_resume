@@ -2,34 +2,37 @@
 <html>
 
 <head>
-
-  <base href="/">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="theme-color" content="blue" />
+  <meta name="theme-color" content="#7127BA" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Portfolio">
   <link rel="apple-touch-icon" href="profile.png">
-
-
   <link rel="icon" type="image/png" href="profile.png" />
-
-  <title>Portfolio</title>
   <link rel="manifest" href="manifest.json">
+  <title>Portfolio</title>
 
   <script>
-
-    const serviceWorkerVersion = "829973116";
+    const serviceWorkerVersion = "235444988";
   </script>
 
   <script src="flutter.js" defer></script>
 
   <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #7127BA;
+      overflow: hidden;
+    }
+
     .main-content {
       height: 100%;
       width: 100%;
@@ -37,12 +40,6 @@
       align-items: center;
       justify-content: center;
       transition: opacity .4s ease-out;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-      position: absolute;
     }
 
     .loader {
@@ -98,43 +95,53 @@
       background: #7127BA;
       border-radius: 50%;
     }
+
+    .loader img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      object-fit: contain;
+    }
   </style>
-  <meta name="theme-color" content="#0E1C1D" />
 </head>
 
-<body style="background-color: #7127BA; height: 100vh; width: 100vw; margin: 0px;">
-
-  <script>
-
-    function delay(time) {
-      return new Promise(resolve => setTimeout(resolve, time));
-    }
-    window.addEventListener('load', function (ev) {
-      var loaderContent = document.querySelector('#loader-content');
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            loaderContent.style.opacity = "0";
-            delay(200)
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+<body>
   <div class="main-content" id="loader-content">
     <div class="loader">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
+      <img src="profile.png" alt="App Logo">
     </div>
-    <img src="profile.png" alt="My App Logo">
   </div>
+
+  <script>
+    window.addEventListener('load', function () {
+      if (!_flutter || !_flutter.loader) {
+        console.error("Flutter loader is not available. Check that flutter.js is loaded.");
+        return;
+      }
+
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            const loader = document.getElementById('loader-content');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+              loader.remove(); // Optional: remove from DOM
+              appRunner.runApp();
+            }, 300);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
