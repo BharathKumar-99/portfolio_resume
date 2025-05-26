@@ -78429,7 +78429,7 @@ var $async$xH=A.K(function(a,b){if(a===1)return A.L(b,r)
 while(true)switch(s){case 0:o=J
 n=B.aW
 s=3
-return A.S($.jh().Fr("json/experience.json"),$async$xH)
+return A.S($.jh().Fr("assets/json/experience.json"),$async$xH)
 case 3:p=o.kO(n.eE(b),new A.aeK(),t.BW)
 q=A.Z(p,!0,p.$ti.h("at.E"))
 s=1
