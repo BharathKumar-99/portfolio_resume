@@ -18,7 +18,7 @@
   <title>Portfolio</title>
 
   <script>
-    const serviceWorkerVersion = "2680322836";
+    const serviceWorkerVersion = "2131141288";
   </script>
 
   <script src="./flutter.js" defer></script>
@@ -46,6 +46,7 @@
     .loader {
       position: relative;
       width: 250px;
+      overflow: visible;
       height: 250px;
       border-radius: 50%;
       background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
@@ -104,11 +105,18 @@
       top: 25px;
       left: 25px;
       object-fit: contain;
+      border: 2px solid red;
+      /* To make sure it's visible */
+      z-index: 10;
+      /* Bring it to front */
+      background: white;
     }
   </style>
+
 </head>
 
 <body style="background-color: #7127BA; height: 100vh; width: 100vw; margin: 0px;">
+
 
 
   <script>
@@ -142,7 +150,7 @@
       <span></span>
       <span></span>
     </div>
-    <img src="./profile.png" alt="My App Logo">
+    <img src="./profile.png" style="width: 200px; height: 200px;" alt="My App">
   </div>
 </body>
 
