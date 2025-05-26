@@ -78375,7 +78375,7 @@ xE(){var s=0,r=A.O(t.a),q,p
 var $async$xE=A.K(function(a,b){if(a===1)return A.L(b,r)
 while(true)switch(s){case 0:p=B.aW
 s=3
-return A.S($.jh().Fr("json/about.json"),$async$xE)
+return A.S($.jh().Fr("assets/json/about.json"),$async$xE)
 case 3:q=p.eE(b)
 s=1
 break
@@ -78472,7 +78472,7 @@ while(true)switch(s){case 0:o=J
 n=t.j
 m=B.aW
 s=3
-return A.S($.jh().Fr("json/projects.json"),$async$xL)
+return A.S($.jh().Fr("assets/json/projects.json"),$async$xL)
 case 3:p=o.kO(n.a(m.eE(b)),new A.a5Q(),t.hF)
 q=A.Z(p,!0,p.$ti.h("at.E"))
 s=1
